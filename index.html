@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Record Table</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 40px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    caption {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Student CGPA Record</caption>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Registration No</th>
+      <th colspan="3">CGPA</th>
+    </tr>
+    <tr>
+      <th>Sem 1</th>
+      <th>Sem 2</th>
+      <th>Sem 3</th>
+    </tr>
+    <tr>
+      <td>Rahul Sharma</td>
+      <td>2021CS001</td>
+      <td>8.2</td>
+      <td>8.5</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td>Priya Verma</td>
+      <td>2021CS002</td>
+      <td>8.9</td>
+      <td colspan="2">Result Awaited</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Aman Khan</td>
+      <td rowspan="2">2021CS003</td>
+      <td>7.5</td>
+      <td>7.8</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td colspan="3">Improvement Applied</td>
+    </tr>
+  </table>
+
+</body>
+</html>
